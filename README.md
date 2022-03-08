@@ -6,6 +6,8 @@ Branch gh-pages => project deployed and available at https://yuuusuuke.github.io
 
 ## Installation
 
+### Requirements
+
 To install this project you need :
 
 - npm, yarn or npx (choose one)
