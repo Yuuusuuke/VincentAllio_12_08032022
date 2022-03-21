@@ -1,0 +1,27 @@
+.navIcon {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.navIcon__icon {
+    font-size: 32px;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .navIcon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .navIcon__icon {
+        font-size: 26px;
+    }
+}
