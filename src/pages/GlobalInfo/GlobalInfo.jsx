@@ -13,10 +13,12 @@ export default function GlobalInfo(){
     const {data, fetchData} = useContext(DataContext);
     const [info, setInfo] = useState(null);
     
+    // Get data once
     useEffect(() => {
         fetchData(id);
     }, []);
 
+    // Check error value and set data if it's ok
     useEffect(() => {
         if(data.error >= 200 && data.error <= 299){
             setInfo(data);
@@ -28,6 +30,7 @@ export default function GlobalInfo(){
 
     return(
         <>{console.log(info)}
+        {/* Display only if a data is set */}
         {info != null && 
         <>
         <div className="globalInfoHeader">

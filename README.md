@@ -9,7 +9,8 @@ Branch gh-pages => project deployed and available at https://yuuusuuke.github.io
 
 To install this project you need :
 
-- npm, yarn or npx (choose one)
+- [npm](https://www.npmjs.com/), [yarn](https://yarnpkg.com/) or [npx](https://www.npmjs.com/package/npx) (choose one)
+- [cross-env](https://www.npmjs.com/package/cross-env) (in order to run this project at port 3006)
 
 ### Step 1
 

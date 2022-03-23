@@ -2,6 +2,17 @@ import React from "react";
 import "./Card.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
+/**
+ * Card function
+ * @date 2022-03-23
+ * 
+ * @param {string} props.color
+ * @param {IconDefinition} props.icon
+ * @param {string} props.data
+ * @param {string} props.type
+ * 
+ * @returns {any}
+ */
 export default function Card(props){
     return(
         <div className="card">
