@@ -7,6 +7,7 @@ import APIChecker from './components/APIChecker/APIChecker';
 import Page404 from "./pages/Page404/Pages404";
 import TopNavBar from './components/TopNavBar/TopNavBar';
 import SideNavBar from './components/SideNavBar/SideNavBar';
+import GlobalInfo from './pages/GlobalInfo/GlobalInfo';
 
 function App() {
   return (
@@ -16,16 +17,16 @@ function App() {
       <div className='mainTable'>
         <SideNavBar />
         <div className='mainContent'>
+          <DataProvider>
           <Router>
             <Routes>
               <Route path="/user/:id" element={
-                <DataProvider>
-                  <APIChecker />
-                </DataProvider>
+                  <GlobalInfo />
               } />
               <Route path='*' element={<Page404 />} />
             </Routes>
           </Router>
+          </DataProvider>
 
         </div>
       </div>

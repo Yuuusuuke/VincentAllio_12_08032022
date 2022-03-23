@@ -2,12 +2,13 @@ import React from "react";
 import NavIcon from "../NavIcon/NavIcon";
 import "./SideNavBar.css";
 
-import {faPersonBiking, faPersonSwimming, faDumbbell} from "@fortawesome/free-solid-svg-icons";
+import {faPersonBiking, faPersonSwimming, faDumbbell, faPersonSnowboarding} from "@fortawesome/free-solid-svg-icons";
 
 export default function SideNavBar(){
     return(
         <nav className="sideNavBar">
             <div className="sideNavBar__table">
+                <NavIcon icon={faPersonSnowboarding} />
                 <NavIcon icon={faPersonSwimming} />
                 <NavIcon icon={faPersonBiking} />
                 <NavIcon icon={faDumbbell} />

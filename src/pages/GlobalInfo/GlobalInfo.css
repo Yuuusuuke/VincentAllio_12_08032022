@@ -1,0 +1,25 @@
+.globalInfoHeader {
+    padding: 65px 8% 0 8%;
+    text-align: left;
+}
+
+.globalInfoHeader .globalInfoTitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 24px;
+}
+
+.globalInfoTitle--red {
+    color: red;
+}
+
+.globalInfoHeader .globalInfoSub {
+    margin-top: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}

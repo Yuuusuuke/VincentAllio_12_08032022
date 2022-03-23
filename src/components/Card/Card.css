@@ -1,0 +1,87 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px;
+
+    background-color: #FBFBFB;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+
+    border-radius: 5px;
+    max-width: 258px;
+    box-sizing: border-box;
+}
+
+.card .card__iconArea {
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.card__iconArea .card__iconArea__icon {
+    font-size: 20px;
+}
+
+.card__dataArea {
+    margin-left: 24px;
+    text-align: left;
+}
+
+.card__dataArea .card__dataArea__data {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #282D30;
+    margin-bottom: 2px;
+}
+
+.card__dataArea .card__dataArea__type {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #74798C;
+}
+
+
+
+
+/* Red icon */
+.card__iconArea.icon--red {
+    background-color: #FF00001A;
+}
+
+.card__iconArea.icon--red .card__iconArea__icon {
+    color: #FF0000;
+}
+
+/* Blue icon */
+.card__iconArea.icon--blue {
+    background-color: #4AB8FF1A;
+}
+
+.card__iconArea.icon--blue .card__iconArea__icon {
+    color: #4AB8FF;
+}
+
+/* Yellow icon */
+.card__iconArea.icon--yellow {
+    background-color: #FDCC0C1A;
+}
+
+.card__iconArea.icon--yellow .card__iconArea__icon {
+    color: #FDCC0C;
+}
+
+/* Pink icon */
+.card__iconArea.icon--pink {
+    background-color: #FD51811A;
+}
+
+.card__iconArea.icon--pink .card__iconArea__icon {
+    color: #FD5181;
+}
