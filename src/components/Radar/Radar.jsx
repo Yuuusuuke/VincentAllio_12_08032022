@@ -14,7 +14,6 @@ export default function RadarGraph(props){
     }
 
     let data = sortArray(props.data.data, props.data.kind);
-    console.log(data);
       
     return(
         <ResponsiveContainer width="100%" height="100%">

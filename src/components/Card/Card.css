@@ -85,3 +85,31 @@
 .card__iconArea.icon--pink .card__iconArea__icon {
     color: #FD5181;
 }
+
+@media screen and (max-width: 1300px) {
+    .card {
+        padding: 20px;
+    }
+
+    /* Icon */
+    .card .card__iconArea {
+        padding: 15px;
+    }
+
+    .card__iconArea .card__iconArea__icon {
+        font-size: 18px;
+    }
+
+    /* Data */
+    .card__dataArea {
+        margin-left: 20px;
+    }
+
+    .card__dataArea .card__dataArea__data {
+        font-size: 18px;
+    }
+
+    .card__dataArea .card__dataArea__type {
+        font-size: 12px;
+    }
+}
