@@ -24,7 +24,7 @@ Inside this folder clone the forked project (git clone **repositoryLink.git**)
 ## 2- Deploy in your own repository
 ### Requirements
 
-You'll need gh-pages to deploy on github (npm install gh-pages --save-dev)
+You'll need [gh-pages](https://www.npmjs.com/package/gh-pages) to deploy on github (npm install gh-pages --save-dev)
 
 ### Changes
 

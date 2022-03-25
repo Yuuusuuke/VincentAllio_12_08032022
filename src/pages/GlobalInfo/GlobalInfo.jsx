@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { DataContext } from "../../context/DataContext";
 import Card from "../../components/Card/Card";
+import RadarGraph from "../../components/Radar/Radar";
 import {faFire, faDrumstickBite, faAppleWhole, faBurger} from "@fortawesome/free-solid-svg-icons";
 
 export default function GlobalInfo(){
@@ -41,10 +42,24 @@ export default function GlobalInfo(){
                 Félicitation ! Vous avez explosé vos objectifs hier 👏
             </p>
         </div>
-        <Card data={`${info.globalInfo.data.keyData.calorieCount}kCal`} type="Calories" icon={faFire} color="red" />
-        <Card data={`${info.globalInfo.data.keyData.proteinCount}g`} type="Proteines" icon={faDrumstickBite} color="blue" />
-        <Card data={`${info.globalInfo.data.keyData.carbohydrateCount}g`} type="Glucides" icon={faAppleWhole} color="yellow" />
-        <Card data={`${info.globalInfo.data.keyData.lipidCount}g`} type="Lipides" icon={faBurger} color="pink" />
+        <div className="graphs">
+            <div className="graphs__main">
+                <div className="graphs__main__activity"></div>
+                <div className="graphs__main__performances">
+                    <div className="graphs__main__performances__radar"></div>
+                    <div className="graphs__main__performances__radar">
+                        <RadarGraph data={info.performance.data} graphColor={"#FF0101"} strokeColor={"#FF0101"} />
+                    </div>
+                    <div className="graphs__main__performances__radar"></div>
+                </div>
+            </div>
+            <div className="graphs__cards">
+                <Card data={`${info.globalInfo.data.keyData.calorieCount}kCal`} type="Calories" icon={faFire} color="red" />
+                <Card data={`${info.globalInfo.data.keyData.proteinCount}g`} type="Proteines" icon={faDrumstickBite} color="blue" />
+                <Card data={`${info.globalInfo.data.keyData.carbohydrateCount}g`} type="Glucides" icon={faAppleWhole} color="yellow" />
+                <Card data={`${info.globalInfo.data.keyData.lipidCount}g`} type="Lipides" icon={faBurger} color="pink" />
+            </div>
+        </div>
         </>
         }
         </>
