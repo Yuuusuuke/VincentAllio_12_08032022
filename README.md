@@ -30,6 +30,10 @@ You'll need [gh-pages](https://www.npmjs.com/package/gh-pages) to deploy on gith
 
 In packages.json change the "homepage" link with your own repository, such as : **nickmame.github.io/repository**
 
+### Deployement
+
+npm run deploy
+
 ## 3- Run the project
 
 Use the command line : npm start

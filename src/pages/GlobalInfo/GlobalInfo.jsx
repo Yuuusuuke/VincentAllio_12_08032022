@@ -7,6 +7,7 @@ import { DataContext } from "../../context/DataContext";
 import Card from "../../components/Card/Card";
 import RadarGraph from "../../components/Radar/Radar";
 import {faFire, faDrumstickBite, faAppleWhole, faBurger} from "@fortawesome/free-solid-svg-icons";
+import RadialGraph from "../../components/RadialGraph/RadialGraph";
 
 export default function GlobalInfo(){
     const navigation = useNavigate();
@@ -50,7 +51,9 @@ export default function GlobalInfo(){
                     <div className="graphs__main__performances__radar">
                         <RadarGraph data={info.performance.data} graphColor={"#FF0101"} strokeColor={"#FF0101"} />
                     </div>
-                    <div className="graphs__main__performances__radar"></div>
+                    <div className="graphs__main__performances__radial">
+                        <RadialGraph data={info.globalInfo.data.todayScore} color="#FF0101" />
+                    </div>
                 </div>
             </div>
             <div className="graphs__cards">
