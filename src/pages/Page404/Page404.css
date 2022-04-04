@@ -1,0 +1,19 @@
+.Errormain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Errormain h1{
+    font-size: 150px;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.Errormain a{
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}

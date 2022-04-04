@@ -8,6 +8,7 @@ import Card from "../../components/Card/Card";
 import RadarGraph from "../../components/Radar/Radar";
 import {faFire, faDrumstickBite, faAppleWhole, faBurger} from "@fortawesome/free-solid-svg-icons";
 import RadialGraph from "../../components/RadialGraph/RadialGraph";
+import { Link } from "react-router-dom";
 
 export default function GlobalInfo(){
     const navigation = useNavigate();
@@ -33,7 +34,7 @@ export default function GlobalInfo(){
     return(
         <>{console.log(info)}
         {/* Display only if a data is set */}
-        {info != null && 
+        {info != null ? 
         <>
         <div className="globalInfoHeader">
             <h1 className="globalInfoTitle">
@@ -64,6 +65,11 @@ export default function GlobalInfo(){
             </div>
         </div>
         </>
+        :
+        <div className="InfoError">
+        <h3>Impossible d'accéder aux données. Revenez ultérieurement.</h3>
+        <Link to="/">Redirection vers le menu principal</Link>
+        </div>
         }
         </>
     );

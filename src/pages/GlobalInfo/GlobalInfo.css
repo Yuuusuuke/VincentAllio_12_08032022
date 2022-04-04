@@ -24,6 +24,26 @@
     line-height: 24px;
 }
 
+.InfoError{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.InfoError h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.InfoError a{
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* Graph */
 .graphs {
     display: flex;
@@ -72,6 +92,7 @@
 
 .graphs__main__performances__radar {
     background-color: #282D30;
+    min-width: 265px;
 }
 
 .graphs__main__performances__radial {

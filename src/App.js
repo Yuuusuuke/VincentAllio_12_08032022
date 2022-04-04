@@ -20,9 +20,7 @@ function App() {
           <DataProvider>
           <Router>
             <Routes>
-              <Route path="/user/:id" element={
-                  <GlobalInfo />
-              } />
+              <Route path="/user/:id" element={<GlobalInfo />} />
               <Route path='*' element={<Page404 />} />
             </Routes>
           </Router>
