@@ -1,0 +1,54 @@
+.barGraphHeader{
+    position: absolute;
+    top: 14px;
+    width: 96%;
+    left: 3%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.barGraphTitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #20253A;
+}
+
+.barGraphLegend{
+    display: flex;
+}
+
+.barGraphType{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.typeCircle{
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.typeCircle--red{
+    background-color: #E60000;
+}
+
+.typeCircle--black{
+    background-color: #282D30;
+}
+
+.typeText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #74798C;
+}

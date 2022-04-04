@@ -9,6 +9,7 @@ import RadarGraph from "../../components/Radar/Radar";
 import {faFire, faDrumstickBite, faAppleWhole, faBurger} from "@fortawesome/free-solid-svg-icons";
 import RadialGraph from "../../components/RadialGraph/RadialGraph";
 import { Link } from "react-router-dom";
+import BarGraph from "../../components/BarGraph/BarGraph";
 
 export default function GlobalInfo(){
     const navigation = useNavigate();
@@ -46,7 +47,9 @@ export default function GlobalInfo(){
         </div>
         <div className="graphs">
             <div className="graphs__main">
-                <div className="graphs__main__activity"></div>
+                <div className="graphs__main__activity">
+                    <BarGraph data={info.activity.data.sessions} />
+                </div>
                 <div className="graphs__main__performances">
                     <div className="graphs__main__performances__radar"></div>
                     <div className="graphs__main__performances__radar">
@@ -67,8 +70,8 @@ export default function GlobalInfo(){
         </>
         :
         <div className="InfoError">
-        <h3>Impossible d'accéder aux données. Revenez ultérieurement.</h3>
-        <Link to="/">Redirection vers le menu principal</Link>
+            <h3>Impossible d'accéder aux données. Revenez ultérieurement.</h3>
+            <Link to="/">Redirection vers le menu principal</Link>
         </div>
         }
         </>
