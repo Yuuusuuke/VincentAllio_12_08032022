@@ -10,6 +10,7 @@ import {faFire, faDrumstickBite, faAppleWhole, faBurger} from "@fortawesome/free
 import RadialGraph from "../../components/RadialGraph/RadialGraph";
 import { Link } from "react-router-dom";
 import BarGraph from "../../components/BarGraph/BarGraph";
+import LineGraph from "../../components/LineGraph/LineGraph";
 
 export default function GlobalInfo(){
     const navigation = useNavigate();
@@ -51,7 +52,9 @@ export default function GlobalInfo(){
                     <BarGraph data={info.activity.data.sessions} />
                 </div>
                 <div className="graphs__main__performances">
-                    <div className="graphs__main__performances__radar"></div>
+                    <div className="graphs__main__performances__line">
+                        <LineGraph data={info.averageSessions.data.sessions} />
+                    </div>
                     <div className="graphs__main__performances__radar">
                         <RadarGraph data={info.performance.data} graphColor={"#FF0101"} strokeColor={"#FF0101"} />
                     </div>

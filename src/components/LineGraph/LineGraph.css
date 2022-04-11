@@ -1,0 +1,24 @@
+.lineGraphTitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+
+    top: 10px;
+    left: 10px;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+
+    position: absolute;
+    text-align: left;
+}
+
+@media screen and (max-width: 1300px) {
+    .lineGraphTitle{
+        font-size: 12px;
+    }
+}

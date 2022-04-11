@@ -89,17 +89,27 @@
     width: 100%;
 }
 
-.graphs__main__performances :not(:first-child) {
+.graphs__main__performances > :not(:first-child) {
     margin-left: 3%;
+}
+
+.graphs__main__performances__line{
+    background-color: #FF0000;
+    min-width: 200px;
+    padding: 1%;
+    box-sizing: border-box;
+
+    position: relative;
 }
 
 .graphs__main__performances__radar {
     background-color: #282D30;
-    min-width: 265px;
+    min-width: 214px;
 }
 
 .graphs__main__performances__radial {
     background-color: white;
+    min-width: 160px;
 }
 
 /* Cards */
