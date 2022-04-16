@@ -1,8 +1,18 @@
 import React from "react";
 import "./RadialGraph.css";
 import { RadialBarChart, RadialBar, PolarAngleAxis, ResponsiveContainer } from 'recharts';
+import PropTypes from 'prop-types';
 
 
+/**
+ * RadialGraph function
+ * @date 2022-04-16
+ * 
+ * @param {Array} props.data
+ * @param {String} props.color
+ * 
+ * @returns {any}
+ */
 export default function RadialGraph(props){
     const data = [{value: props.data}];
 
@@ -21,3 +31,8 @@ export default function RadialGraph(props){
         </div>
     );
 }
+
+RadialGraph.prototype = {
+    data: PropTypes.array,
+    color: PropTypes.string
+};

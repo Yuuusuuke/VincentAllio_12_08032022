@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import "./ressources/style/global.css"; // Global css rules
 import {DataProvider} from "./context/DataContext";
-import APIChecker from './components/APIChecker/APIChecker';
 import Page404 from "./pages/Page404/Pages404";
 import TopNavBar from './components/TopNavBar/TopNavBar';
 import SideNavBar from './components/SideNavBar/SideNavBar';

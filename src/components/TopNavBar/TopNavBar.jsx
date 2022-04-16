@@ -3,6 +3,12 @@ import React from "react";
 import "./TopNavBar.css";
 import logo from "../../ressources/images/logo.png"
 
+/**
+ * TopNavGraph function
+ * @date 2022-04-16
+ * 
+ * @returns {any}
+ */
 export default function TopNavBar(){
     return(
         <nav className="topNavBar">

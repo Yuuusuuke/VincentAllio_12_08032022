@@ -4,6 +4,12 @@ import "./SideNavBar.css";
 
 import {faPersonBiking, faPersonSwimming, faDumbbell, faPersonSnowboarding} from "@fortawesome/free-solid-svg-icons";
 
+/**
+ * SideNavBar function
+ * @date 2022-04-16
+ * 
+ * @returns {any}
+ */
 export default function SideNavBar(){
     return(
         <nav className="sideNavBar">

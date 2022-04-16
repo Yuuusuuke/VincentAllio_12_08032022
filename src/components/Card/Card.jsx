@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import PropTypes from 'prop-types';
 
 /**
  * Card function
@@ -26,3 +27,10 @@ export default function Card(props){
         </div>
     );
 }
+
+Card.prototype = {
+    color: PropTypes.string,
+    icon: PropTypes.IconDefinition,
+    data: PropTypes.string,
+    type: PropTypes.string
+};

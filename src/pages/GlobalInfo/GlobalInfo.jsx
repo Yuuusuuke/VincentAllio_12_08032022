@@ -34,7 +34,7 @@ export default function GlobalInfo(){
     }, [data])
 
     return(
-        <>{console.log(info)}
+        <>
         {/* Display only if a data is set */}
         {info != null ? 
         <>

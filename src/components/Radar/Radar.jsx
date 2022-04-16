@@ -2,9 +2,29 @@ import React from "react";
 import "./Radar.css";
 
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer} from 'recharts';
+import PropTypes from 'prop-types';
 
+/**
+ * RadarGraph function
+ * @date 2022-04-16
+ * 
+ * @param {Array} props.data
+ * @param {String} props.graphColor
+ * @param {String} props.strokeColor
+ * 
+ * @returns {any}
+ */
 export default function RadarGraph(props){
 
+    /**
+     * sortArray function
+     * @date 2022-04-16
+     * 
+     * @param {Array} arrayData
+     * @param {Array} arrayLegend
+     * 
+     * @returns {Array}
+     */
     function sortArray(arrayData, arrayLegend){
         let result = [];
         for(let i = 0; i<arrayData.length; i++){
@@ -25,3 +45,9 @@ export default function RadarGraph(props){
         </ResponsiveContainer>
     );
 }
+
+RadarGraph.prototype = {
+    data: PropTypes.array,
+    graphColor: PropTypes.string,
+    strokeColor: PropTypes.string
+};

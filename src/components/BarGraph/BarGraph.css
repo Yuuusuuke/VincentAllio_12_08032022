@@ -52,3 +52,33 @@
 
     color: #74798C;
 }
+
+.tooltipBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: #E60000;
+
+    padding: 4px 7px;
+}
+
+.tooltipBar > :not(:first-child){
+    margin-top: 7px;
+}
+
+.tooltipBar__content{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1300px) {
+    .tooltipBar__content{
+        font-size: 7px;
+    }
+}

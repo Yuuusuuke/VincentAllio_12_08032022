@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavIcon.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import PropTypes from 'prop-types';
 
 /**
  * NavIcon
@@ -17,3 +18,7 @@ export default function NavIcon(props){
         </div>
     );
 }
+
+NavIcon.prototype = {
+    icon: PropTypes.IconDefinition
+};

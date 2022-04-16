@@ -17,8 +17,23 @@
     text-align: left;
 }
 
+.tooltip{
+    background: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 24px;
+
+    padding: 1px 7px;
+}
+
 @media screen and (max-width: 1300px) {
     .lineGraphTitle{
         font-size: 12px;
+    }
+
+    .tooltip{
+        font-size: 8px;
     }
 }
