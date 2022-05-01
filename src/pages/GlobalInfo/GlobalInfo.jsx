@@ -27,6 +27,7 @@ export default function GlobalInfo(){
     useEffect(() => {
         if(data.error >= 200 && data.error <= 299){
             setInfo(data);
+            console.log(data);
         }
         else if(data.error === 404){
             navigation("/404");
@@ -59,7 +60,7 @@ export default function GlobalInfo(){
                         <RadarGraph data={info.performance.data} graphColor={"#FF0101"} strokeColor={"#FF0101"} />
                     </div>
                     <div className="graphs__main__performances__radial">
-                        <RadialGraph data={info.globalInfo.data.todayScore} color="#FF0101" />
+                        <RadialGraph data={info.globalInfo.data.todayScore === undefined ? info.globalInfo.data.score : info.globalInfo.data.todayScore} color="#FF0101" />
                     </div>
                 </div>
             </div>
